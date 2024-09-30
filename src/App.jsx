@@ -9,7 +9,12 @@ function App() {
 
   return (
     <>
-      <ImagesDisplay />
+      <ImagesDisplay
+        score={score}
+        setScore={setScore}
+        highScore={highScore}
+        setHighScore={setHighScore}
+      />
       <Score score={score} highScore={highScore} />
     </>
   );
